@@ -16,6 +16,7 @@ const TaskSchema = new mongoose.Schema({
   },
   createdAt: {
     type: Date,
+    expires: `{this.duration}m`,
     default: Date.now,
   },
 });
